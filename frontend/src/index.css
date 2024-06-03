@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* General element styling */
+h1 {
+    @apply text-3xl font-bold;
+}
+
+
+
+.burger-line {
+    @apply bg-slate-900;
+    width: 2rem;
+    height: 0.15rem;
+}
+
+
+/* Generic form styles */
+form {
+    @apply flex flex-col justify-center items-center border-secondary; 
+}
+
+.input_container {
+    @apply flex flex-col justify-around m-4 px-5 w-3/5 md:w-72;
+}
+
+.input_container input {
+    @apply my-2 border-gray-200 border-b-2 ;
+    @apply focus:outline-none enabled:focus:border-primary hover:cursor-pointer;
+}
+
+.submitBtn {
+    @apply border-2 rounded-xl px-5 py-2.5 m-3;
+    @apply bg-primary border-secondary text-gray-100;
+
+}
+
+/* Info section styles */
+
+.info_section {
+    @apply grid;
+    @apply rounded-lg text-gray-100 m-4;
+}
+
+.info_section h2 {
+    @apply text-3xl font-medium font-body;
+}
+
+.info_section span {
+    @apply text-sm mx-2 my-1 text-pretty; 
+}
