@@ -1,14 +1,7 @@
-function expandMobileNav(){
-    
-}
-
-
-
 function Nav(){
     return (
     <nav className="w-full h-24 flex justify-between">
         <div className="top-0 left-0 w-1/3 h-full bg-slate-800 rounded-br-full">
-            
         </div>
         <ul className="hidden md:block">
             <li className="nav_links"><a href="">Lifestyle</a></li>
