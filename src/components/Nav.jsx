@@ -1,12 +1,19 @@
+import { Link } from 'react-router-dom';
+
+
 function Nav(){
+
+    const navLinkStyle = ({isActive}) => {
+        return (isActive  ? "bg-primary p-1 rounded": "bg-primary p-1 rounded")
+    }
+
     return (
     <nav className="w-full h-24 flex justify-between">
-        <div className="top-0 left-0 w-1/3 h-full bg-slate-800 rounded-br-full">
-        </div>
         <ul className="hidden md:block">
-            <li className="nav_links"><a href="">Lifestyle</a></li>
-            <li className="nav_links"><a href="">Research</a></li>
-            <li className="nav_links"><a href="">Forum</a></li>
+            <li className="nav_links"><Link to="/" className={navLinkStyle}>Home</Link></li>
+            <li className="nav_links"><Link to="/forum" className={navLinkStyle}>Forum</Link></li>
+            <li className="nav_links"><Link to="/showroom" className={navLinkStyle}>Showroom</Link></li>
+            <li className="nav_links"><Link to="/research" className={navLinkStyle}>Research</Link></li>
         </ul>
 
         <ul className="hidden md:block">
